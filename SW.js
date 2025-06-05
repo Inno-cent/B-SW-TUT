@@ -24,6 +24,7 @@ const XLSX = require('xlsx');
   const data = [];
   $('h2').each((i, el) => {
     data.push({ Title: $(el).text().trim() });
+    console.log(data)
   });
 
   // Convert to worksheet and workbook
