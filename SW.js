@@ -21,11 +21,11 @@ const XLSX = require('xlsx');
   const $ = cheerio.load(await response.text());
 
   // Example: Extracting all <h2> texts from the page
-  const data = [];
-  $('h2').each((i, el) => {
-    data.push({ Title: $(el).text().trim() });
-    console.log(data)
-  });
+//   const data = [];
+//   $('h2').each((i, el) => {
+//     data.push({ Title: $(el).text().trim() });
+//     console.log(data)
+//   });
 
   // Convert to worksheet and workbook
   const worksheet = XLSX.utils.json_to_sheet(data);
